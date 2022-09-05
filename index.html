@@ -532,6 +532,10 @@ document.addEventListener('DOMContentLoaded', function(){
 	var bg = document.getElementsByClassName('overlay-bg');
 	var bgClass = bg[0];
 	
+	if(localStorage.getItem('OptBackgroundImageUrl')){
+bgClass.setAttribute('style','background-image:url('+localStorage.getItem('OptBackgroundImageUrl'));
+}
+	
 	var changeBgImg = document.querySelectorAll('#bgOptions > span'); 
 	for(var i=0; i<changeBgImg.length; i++){
 		
