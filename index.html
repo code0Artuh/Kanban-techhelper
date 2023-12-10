@@ -13,7 +13,7 @@
     }
     
     function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
+        ev.dataTransfer.setData("text/html", ev.target.id);
     }
     
     function drop(ev, el) {
